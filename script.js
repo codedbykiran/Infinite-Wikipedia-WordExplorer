@@ -10,11 +10,6 @@ const myInfo = [
   "I want to become a strong JavaScript developer"
 ];
 
-if (!sessionStorage.getItem("buddyShown")) {
-  greetBox.innerHTML = "<h2>Hey buddy 👋</h2>";
-  sessionStorage.setItem("buddyShown", "true");
-}
-
 let index = sessionStorage.getItem("infoIndex") || 0;
 index = parseInt(index);
 
