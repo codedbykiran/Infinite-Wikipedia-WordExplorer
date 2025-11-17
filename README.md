@@ -14,18 +14,7 @@
 
 ---
 
-## 📁 Project Structure
-
-```
-📦 Infinite-Word-Explorer
-├── index.html
-├── style.css
-└── script.js
-```
-
----
-
-## 🛠 Technologies Used
+## Programming Languages
 
 * HTML5
 * CSS3
@@ -34,7 +23,7 @@
 
 ---
 
-## 📌 How It Works
+## How It Works
 
 1. The app displays a sentence.
 2. Each word is wrapped in a clickable span.
@@ -44,7 +33,7 @@
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 1. Download or clone the repository
 2. Open **index.html** in your browser
@@ -54,11 +43,11 @@
 
 ## 🔗 Live Demo
 
-(Add your live GitHub Pages link here)
+(https://codedbykiran.github.io/Infinite-Wikipedia-WordExplorer/)
 
 ---
 
-## 📚 Future Improvements
+## Future Improvements
 
 * Add dark mode
 * Add animations for transitions
@@ -71,8 +60,8 @@
 
 Pull requests are welcome.
 
----
+## Author
 
-## 📜 License
-
-This project is open-source under the MIT License.
+**Kiran Charhate**  
+🔗 GitHub: https://github.com/codedbykiran  
+🔗 LinkedIn: https://www.linkedin.com/in/kirancharhate/
