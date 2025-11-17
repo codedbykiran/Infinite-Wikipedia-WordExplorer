@@ -2,7 +2,6 @@ const greetBox = document.getElementById("greet");
 const sentenceBox = document.getElementById("sentence");
 const resultBox = document.getElementById("result");
 
-// Personal information list
 const myInfo = [
   "My name is Kiran and I am a frontend developer",
   "I love building interactive web projects",
@@ -11,24 +10,20 @@ const myInfo = [
   "I want to become a strong JavaScript developer"
 ];
 
-// Show "Hey buddy" only first time
 if (!sessionStorage.getItem("buddyShown")) {
   greetBox.innerHTML = "<h2>Hey buddy 👋</h2>";
   sessionStorage.setItem("buddyShown", "true");
 }
 
-// Which sentence to show
 let index = sessionStorage.getItem("infoIndex") || 0;
 index = parseInt(index);
 
 const currentSentence = myInfo[index];
 
-// Store next index
 let nextIndex = index + 1;
 if (nextIndex >= myInfo.length) nextIndex = 0;
 sessionStorage.setItem("infoIndex", nextIndex);
 
-// Display the sentence with clickable words
 function displaySentence() {
   sentenceBox.innerHTML = "";
 
@@ -42,7 +37,6 @@ function displaySentence() {
   });
 }
 
-// Multi-result Wikipedia search
 async function fetchWiki(word) {
   resultBox.innerHTML = "Loading...";
 
@@ -58,7 +52,6 @@ async function fetchWiki(word) {
       return;
     }
 
-    // Show 4–5 results
     let html = "";
     data.pages.forEach(page => {
       html += `
